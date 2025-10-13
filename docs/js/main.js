@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const seconds = Math.floor((difference % (1000 * 60)) / 1000);
                 
                 countdownElement.innerHTML = `
-                    <h3 class="text-xl font-bold text-white mb-4">学園祭まであと</h3>
+                    <h3 class="text-xl font-bold text-white mb-4">相模女子大学 相生祭 まであと</h3>
                     <div class="grid grid-cols-4 gap-4 text-center">
                         <div class="bg-white/20 rounded-lg p-3">
                             <div class="text-2xl font-bold text-white">${days}</div>
