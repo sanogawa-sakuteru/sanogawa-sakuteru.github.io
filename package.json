@@ -27,9 +27,15 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "clean": "gatsby clean && rm -rf docs",
+    "clean:win": "gatsby clean && npm run remove-docs-win",
+    "remove-docs-win": "powershell -Command \"Remove-Item -Recurse -Force docs -ErrorAction SilentlyContinue\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && cp -pvr public/* ../ && git add ../ && git commit -m 'Deploy to production' && git push"
+    "deploy": "gatsby build && cp -pvr public/* ../ && git add ../ && git commit -m 'Deploy to production' && git push",
+    "build:docs": "gatsby build && npm run move-public",
+    "move-public": "rm -rf docs && mv public docs",
+    "build:docs-win": "gatsby build && npm run move-public-win",
+    "move-public-win": "powershell -Command \"Remove-Item -Recurse -Force docs -ErrorAction SilentlyContinue; Move-Item public docs\""
   },
   "repository": {
     "type": "git",
