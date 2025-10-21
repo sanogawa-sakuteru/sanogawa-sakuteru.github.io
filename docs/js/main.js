@@ -364,6 +364,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    /*
     console.log('🍃 茶くてるランディングページが正常に読み込まれました！');
     console.log('佐野川茶の持続可能な未来のために、ありがとうございます。');
+    */
 });

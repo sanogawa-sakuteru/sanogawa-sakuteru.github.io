@@ -413,3 +413,27 @@ html {
         scroll-behavior: auto;
     }
 }
+
+
+#top {
+    /* 背景画像の指定 */
+    background-image: url('/images/S__143106064.jpg'); 
+    
+    /* 背景画像の繰り返しを非表示にする */
+    background-repeat: no-repeat; 
+    
+    /* 背景画像を表示領域全体に広げる */
+    background-size: cover; 
+    
+    /* 背景画像の表示位置を中央に設定 */
+    background-position: center; 
+
+    /* 背景画像が固定されるようにする（スクロールしても動かない） */
+    background-attachment: fixed; /* 必要に応じて設定 */
+    
+    /* セッションの高さや余白などの設定 */
+    /*
+    height: 500px;
+    padding: 50px;
+    color: #fff; *//* テキストの色を白にする */
+}

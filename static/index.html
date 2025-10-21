@@ -108,9 +108,12 @@
 
     <!-- Hero Section -->
     <section id="top" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-tea-light to-warm-beige overflow-hidden">
+        <!-- 黒透明オーバーレイ -->
         <div class="absolute inset-0 bg-black/10"></div>
+         <!-- コンテンツ全体 -->
         <div class="container mx-auto px-4 text-center relative z-10">
-            <div class="">
+            <!-- ここに薄いグレーの背景ボックスを追加 -->
+            <div class="inline-block bg-gray-100/80 p-8 rounded-2xl shadow-lg">
                 <h1 class="text-5xl md:text-7xl font-bold text-gray-800 mb-6">
                     茶<span class="text-tea-dark">くてる</span>
                 </h1>
@@ -119,26 +122,21 @@
                 </p>
                 <p class="text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
                     神奈川県相模原市藤野地区の伝統ある佐野川茶を使った<br>
-                    革新的なモクテルで、若い世代に緑茶の新たな可能性をお届けします
+                    ノンアルコールのティーカクテルです。<br>
+                    若い世代に緑茶の新たな可能性をお届けします
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="#festival" class="bg-tea-dark text-white px-8 py-3 rounded-full hover:bg-tea-green transition-colors font-medium">
                         相生祭で出会う
                     </a>
-                    <a href="#about" class="border-2 border-tea-dark text-tea-dark px-8 py-3 rounded-full hover:bg-tea-dark hover:text-white transition-colors font-medium">
+                    <a href="#about" class="bg-tea-dark text-white px-8 py-3 rounded-full hover:bg-tea-green transition-colors font-medium">
                         佐野川茶を知る
+                    </a>
+                    <a href="#products" class="bg-tea-dark text-white px-8 py-3 rounded-full hover:bg-tea-green transition-colors font-medium">
+                        「茶くてる」とは
                     </a>
                 </div>
             </div>
-        </div>
-        
-        <!-- Decorative Elements -->
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
-        <div class="absolute top-20 right-10 text-6xl text-tea-light/30">
-            <i class="fas fa-leaf"></i>
-        </div>
-        <div class="absolute bottom-40 left-10 text-4xl text-tea-light/20">
-            <i class="fas fa-seedling"></i>
         </div>
     </section>
 
@@ -153,31 +151,34 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-                <div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">
-                        <i class="fas fa-mountain text-tea-dark mr-3"></i>
-                        藤野の恵み豊かな土地
-                    </h3>
-                    <p class="text-gray-600 mb-4 leading-relaxed">
-                        相模原市藤野地区は、豊かな自然に囲まれた山間部に位置し、お茶の栽培に理想的な環境を提供しています。
-                        清らかな水と適度な傾斜、昼夜の寒暖差が、佐野川茶の深い味わいと香りを育んでいます。
-                    </p>
-                    <p class="text-gray-600 leading-relaxed">
-                        この地で長年にわたって受け継がれてきた伝統的な栽培方法と、農家の皆さんの丁寧な手仕事により、
-                        品質の高いお茶が生産され続けています。
-                    </p>
-                </div>
                 <div class="bg-gradient-to-br from-tea-light to-green-50 p-8 rounded-2xl">
                     <div class="text-center">
                         <div class="text-6xl text-tea-dark mb-4">
                             <i class="fas fa-leaf"></i>
                         </div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">伝統の味わい</h4>
-                        <p class="text-gray-600">
-                            藤野の自然が育む<br>
-                            香り高い佐野川茶
-                        </p>
+                        <div style="text-align: center; margin: 2em;">
+                            <img src="images/sanokawa.jpg" width="100%" style="display: block; margin: auto;">
+                        </div>
                     </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                        <i class="fas fa-mountain text-tea-dark mr-3"></i>
+                        「佐野川茶」とは
+                    </h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        相模原市緑区の佐野川地区（旧藤野町）で育てられている特産のお茶が、「佐野川茶」です。
+                        県内で収穫されたお茶の葉（荒茶）は、通常「県農協茶業センター」に集められ、「足柄茶」として販売されてます。
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        その中でも、佐野川地区では一部の茶葉を地域で独自に加工し、「佐野川茶」というブランドをつくりました。
+                        この地域は昔「佐野川村」と呼ばれており、茶どころ「佐野川」として知られていたことから、その名にちなんで「佐野川茶」と名付けられました。
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        「佐野川茶」は、香りが豊かで甘みが強く、ほどよい苦みに加えて「甘み」と「旨み」が感じられることが特長です。
+                        また、茶園の周辺で刈り取った「すすき」や「笹」などを有機肥料として畑に戻す、「茶草場農法」と呼ばれる地域資源を活用した循環型農業によって、無農薬で丁寧な手仕事で栽培されています。
+                    </p>
                 </div>
             </div>
 
@@ -206,11 +207,20 @@
     <section id="products" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">茶くてる<br>ラインナップ</h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">「茶くてる」とは</h2>
+
+                <div style="text-align: center; margin: 2em;">
+                    <img src="images/sakuteru.png" width="40%" style="display: block; margin: auto;">
+                </div>
+
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    佐野川茶の魅力を現代風にアレンジした、2つの特別なモクテルをご用意しました。
-                    若い世代にも親しみやすい、新しいお茶の楽しみ方を提案します。
+                    相模原市緑区の佐野川地区で育まれた佐野川茶をベースに、お茶の香り・旨味・色合いを活かして創作した、ノンアルコールのティーカクテルです。
+                    単なるお茶割りではなく、お茶を“主役”とした一杯の体験として、香り、見た目、ストーリーまでもデザインされています。
                 </p>
+            </div>
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">茶くてる<br>ラインナップ</h2>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -225,14 +235,15 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h4 class="text-xl font-bold text-gray-800 mb-3">クラシック</h4>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">スタンダード</h4>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            佐野川茶本来の深い味わいを活かした、シンプルで上品なモクテル。
-                            お茶の香りと自然な甘みが絶妙にバランスした、茶くてるのスタンダード。
+                            佐野川茶本来の深い味わいを活かした、シンプルで上品な冷たいお茶です。
+                            お茶の香りと自然な甘みが絶妙にバランスした、茶くてるのスタンダードです。
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-tea-light text-tea-dark px-3 py-1 rounded-full text-sm">佐野川茶ベース</span>
                             <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">ノンアルコール</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">冷茶</span>
                             <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">さっぱり</span>
                         </div>
                     </div>
@@ -251,12 +262,13 @@
                     <div class="p-6">
                         <h4 class="text-xl font-bold text-gray-800 mb-3">モヒートスタイル</h4>
                         <p class="text-gray-600 mb-4 leading-relaxed">
-                            佐野川茶にミントの爽やかさをプラスした、夏にぴったりのリフレッシュモクテル。
-                            緑茶とハーブの意外な組み合わせが生み出す、新感覚の味わい。
+                            佐野川茶にミントの爽やかさをプラスした、夏にぴったりのノンアルコールのティーカクテル。
+                            冷茶とハーブの意外な組み合わせが生み出す、新感覚の味わいです。
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-tea-light text-tea-dark px-3 py-1 rounded-full text-sm">佐野川茶ベース</span>
-                            <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">ミント</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">ノンアルコール</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">ミント</span>
                             <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">爽やか</span>
                         </div>
                     </div>
@@ -269,9 +281,10 @@
     <section id="festival" class="py-20 bg-tea-dark text-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4"><a href="https://www.sagami-wu.ac.jp/campuslife/aioi-56/">2025年度 第56回 相模女子大学 相生祭 (学園祭)</a></h2>
+                <h2 class="text-4xl font-bold mb-4"><a href="https://www.sagami-wu.ac.jp/campuslife/aioi-56/">2025年度 第56回 相模女子大学 相生祭</a></h2>
                 <p class="text-xl text-tea-light max-w-3xl mx-auto">
-                    茶くてるに出会える特別な2日間。私たちと一緒に佐野川茶の新しい魅力を体験しませんか？
+                    相生祭（学園祭）では、「茶くてる」に出会える特別な2日間です。<br>
+                    私たちと一緒に、佐野川茶の新たな魅力を体験してみませんか？
                 </p>
             </div>
 
@@ -304,28 +317,67 @@
                     <h3 class="text-xl font-bold mb-2">運営チーム</h3>
                     <p class="text-tea-light">
                         相模女子大学大学院 社会起業研究科<br>
-                        佐野川茶普及プロジェクト<br>
-                        有志グループ 4名
+                        佐野川茶普及プロジェクト
                     </p>
                 </div>
             </div>
-
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
                 <div style="text-align: center; margin: 2em;">
                     <img src="images/team.png" width="60%" style="display: block; margin: auto;">
                 </div>
                 <h3 class="text-2xl font-bold mb-4">お待ちしています！</h3>
                 <p class="text-tea-light mb-6 leading-relaxed">
-                    相生祭では、茶くてるの試飲はもちろん、佐野川茶の歴史や私たちの取り組みについてもお話しさせていただきます。
-                    地産地消の大切さ、地域農業の持続可能性について、一緒に考えてみませんか？
+                    相生祭では、佐野川茶「茶くてる」の試飲はもちろん、佐野川茶の歴史や私たちの取り組みについてもご紹介いたします。
+                    地産地消の大切さや地域農業の持続可能性についても、皆さまと一緒に考えてまいりたいと思います。
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <button class="bg-white text-tea-dark px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-medium">
-                        <a href="https://www.sagami-wu.ac.jp/campuslife/aioi-56/">詳細情報を見る</a>
+                        <a href="https://www.sagami-wu.ac.jp/campuslife/aioi-56/">相生祭 情報を見る</a>
                     </button>
                     <button class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-tea-dark transition-colors font-medium">
                         <a href="https://www.sagami-wu.ac.jp/university/access/">交通アクセス情報</a>
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Takoyaki Section -->
+    <section id="takoyaki" class="py-20 bg-tea-light text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-4">
+            <h2 class="text-4xl font-bold text-gray-800 mb-3">相生祭限定メニュー たこ焼き</h2>
+            <p class="text-lg text-gray-600">相生祭限定でたこ焼きを販売します。<br>「茶くてる」と相性ぴったり！</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- 画像 -->
+                <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-50">
+                    <img
+                    src="images/takoyaki.png"
+                    alt="相生祭で販売するアツアツのたこ焼き"
+                    loading="lazy"
+                    class="w-full h-full object-cover aspect-[4/3]"
+                    >
+                </div>
+
+                <!-- 説明 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                    外はカリッ、中はとろっ。シンプルに旨い。
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        だし香る生地に大きめのタコ。仕上げのソースは「ソースマヨ」「クレイジーソルト」「ゆずポン酢ゆかり」の3種類から選べます。<br><br>
+                        濃厚なたこ焼きの後味を、<span class="font-semibold text-tea-dark">茶くてる</span>がすっと流してくれます。
+                    </p>
+
+                    <!-- ペアリングの提案 -->
+                    <div class="bg-tea-light/40 border border-tea-light rounded-xl p-4">
+                    <p class="text-gray-800">
+                        <span class="font-bold">おすすめペアリング：</span>
+                        しっかりコクのある「茶くてる（スタンダード）」／爽やかな後口の「モヒートスタイル」
+                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -350,7 +402,7 @@
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         私たちは相模女子大学大学院で社会起業研究科を学ぶ中で、宮本氏と出会いました。
                         授業での持続可能な佐野川茶作りの提案から始まった このプロジェクトは、
-                        4名の有志による実際の行動へと発展しています。
+                        有志による実際の行動へと発展しています。
                     </p>
                     <p class="text-gray-600 mb-4 leading-relaxed">
                         地域で作られているものに気づき、地産地消を意識することで、
@@ -403,9 +455,6 @@
                     <a href="#festival" class="bg-tea-dark text-white px-8 py-3 rounded-full hover:bg-tea-green transition-colors font-medium">
                         相生祭で体験する
                     </a>
-                    <button class="border-2 border-tea-dark text-tea-dark px-8 py-3 rounded-full hover:bg-tea-dark hover:text-white transition-colors font-medium">
-                        取り組みを応援する
-                    </button>
                 </div>
             </div>
         </div>
@@ -417,25 +466,19 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="text-2xl font-bold text-tea-light mb-4">茶くてる</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        佐野川茶の新しい魅力を<br>
-                        若い世代に届ける<br>
-                        革新的なモクテル
-                    </p>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">佐野川茶について</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#about" class="hover:text-tea-light transition-colors">茶の歴史</a></li>
-                        <li><a href="#about" class="hover:text-tea-light transition-colors">藤野地区</a></li>
-                        <li><a href="#about" class="hover:text-tea-light transition-colors">生産者紹介</a></li>
+                        <li><a href="#about" class="hover:text-tea-light transition-colors">佐野川茶の物語</a></li>
+                        <li><a href="#about" class="hover:text-tea-light transition-colors">「佐野川茶」とは</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">茶くてる</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#products" class="hover:text-tea-light transition-colors">クラシック</a></li>
-                        <li><a href="#products" class="hover:text-tea-light transition-colors">モヒートスタイル</a></li>
+                        <li><a href="#products" class="hover:text-tea-light transition-colors">茶くてる</a></li>
+                        <li><a href="#products" class="hover:text-tea-light transition-colors">茶くてる with モヒート</a></li>
                         <li><a href="#festival" class="hover:text-tea-light transition-colors">相生祭情報</a></li>
                     </ul>
                 </div>
