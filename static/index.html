@@ -1,69 +1,133 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>茶くてる - 佐野川茶の新しい魅力を発見 | 第56回 相模女子大学 相生祭</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>茶くてる - 佐野川茶の新しい魅力を発見 | 第56回 相模女子大学 相生祭</title>
 
-    <!-- OGP / SEO -->
-    <meta name="description" content="「茶くてる」は相模原市緑区の佐野川地区で育まれた佐野川茶をベースに、お茶の香り・旨味・色合いを活かして創作した、ノンアルコールのティーカクテルです">
-    <meta property="og:title" content="茶くてる">
-    <meta property="og:description" content="「茶くてる」は相模原市緑区の佐野川地区で育まれた佐野川茶をベースに、お茶の香り・旨味・色合いを活かして創作した、ノンアルコールのティーカクテルです">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sakuteru.com/">
-    <meta property="og:image" content="/images/sakuteru.png">
+  <meta name="description" content="相模原市藤野の特産『佐野川茶』を使ったノンアル・ティーカクテル「茶くてる」。香り・旨味・色合いを活かした新しいお茶体験。2025年の相生祭で試飲できます。">
+  <meta name="keywords" content="佐野川茶, 茶くてる, 藤野, 相模原, ノンアルコール, 相模女子大, 冷茶, 地産地消, 相生祭, ミント, モヒート, 宮本茶園, JA神奈川つくい">
+  <link rel="canonical" href="https://sakuteru.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PB0DNERDQB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- OGP -->
+  <meta property="og:title" content="茶くてる - 佐野川茶の新しい魅力を発見 | 第56回 相模女子大学 相生祭">
+  <meta property="og:description" content="藤野・佐野川茶の新しい飲み方。ノンアル・ティーカクテル「茶くてる」。相生祭で試飲できます。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sakuteru.com/">
+  <meta property="og:site_name" content="茶くてる">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://sakuteru.com/images/sakuteru.webp">
 
-        gtag('config', 'G-PB0DNERDQB');
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KJJ6PBL9');</script>
-    <!-- End Google Tag Manager -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="茶くてる - 佐野川茶の新しい魅力を発見 | 第56回 相模女子大学 相生祭">
+  <meta name="twitter:description" content="相模原市藤野の特産『佐野川茶』を使ったノンアル・ティーカクテル「茶くてる」。相生祭で試飲できます。">
+  <meta name="twitter:image" content="https://sakuteru.com/images/sakuteru.webp">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Tailwind CSS Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'tea-green': '#8BC34A',
-                        'tea-dark': '#4CAF50',
-                        'tea-light': '#C8E6C9',
-                        'earth-brown': '#795548',
-                        'warm-beige': '#F5F5DC'
-                    },
-                    fontFamily: {
-                        'japanese': ['Noto Sans JP', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif']
-                    }
-                }
-            }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap">
+
+  <!-- Font Awesome（必要最低限に。可能なら使用アイコンだけのインラインSVGに移行） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+  <!-- Tailwind（CDNは手軽、最終的にはビルド済みCSSの自己ホストを推奨） -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'tea-green': '#8BC34A',
+            'tea-dark': '#4CAF50',
+            'tea-light': '#C8E6C9',
+            'earth-brown': '#795548',
+            'warm-beige': '#F5F5DC'
+          },
+          fontFamily: {
+            'japanese': ['Noto Sans JP', 'sans-serif'],
+            'inter': ['Inter', 'sans-serif']
+          }
         }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"茶くてる",
+    "url":"https://sakuteru.com/",
+    "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://sakuteru.com/?q={search_term_string}",
+        "query-input":"required name=search_term_string"
+    }
+    }
     </script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"佐野川茶普及プロジェクト",
+    "url":"https://sakuteru.com/",
+    "logo":"https://sakuteru.com/images/sakuteru.webp",
+    "sameAs":[
+        "https://www.instagram.com/sagami_gsse5th/"
+    ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Event",
+    "name":"第56回 相模女子大学 相生祭 - 茶くてる試飲",
+    "startDate":"2025-11-02",
+    "endDate":"2025-11-03",
+    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus":"https://schema.org/EventScheduled",
+    "location":{
+        "@type":"Place",
+        "name":"相模女子大学",
+        "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"相模原市",
+        "addressRegion":"神奈川県",
+        "addressCountry":"JP"
+        }
+    },
+    "image":["https://sakuteru.com/images/sakuteru.webp"],
+    "description":"相模原市藤野の『佐野川茶』を使ったノンアル・ティーカクテル「茶くてる」の試飲会を開催。",
+    "organizer":{
+        "@type":"Organization",
+        "name":"佐野川茶普及プロジェクト",
+        "url":"https://sakuteru.com/"
+    }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"茶くてる",
+    "brand":{"@type":"Brand","name":"佐野川茶"},
+    "description":"藤野の特産『佐野川茶』を主役にしたノンアル・ティーカクテル。",
+    "image":"https://sakuteru.com/images/sakuteru.webp",
+    "category":"Beverage"
+    }
+    </script>
+
 </head>
+
 <body class="font-japanese bg-white text-gray-800">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJJ6PBL9"
@@ -82,8 +146,8 @@
                 <a href="#products" class="text-gray-700 hover:text-tea-dark transition-colors">茶くてる</a>
                 <a href="#festival" class="text-gray-700 hover:text-tea-dark transition-colors">相生祭情報</a>
                 <a href="#mission" class="text-gray-700 hover:text-tea-dark transition-colors">私たちの想い</a>
-                <a href="https://www.instagram.com/sagami_gsse5th/" class="text-gray-700 hover:text-tea-dark transition-colors" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram" width="30" height="30">
+                <a href="https://www.instagram.com/sagami_gsse5th/" class="text-gray-700 hover:text-tea-dark transition-colors" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/instagram-icon.webp" alt="Instagram" width="30" height="30">
                 </a>
             </div>
             <button class="md:hidden text-gray-700" id="mobile-menu-btn">
@@ -99,8 +163,8 @@
                 <a href="#products" class="block text-gray-700 hover:text-tea-dark transition-colors">茶くてる</a>
                 <a href="#festival" class="block text-gray-700 hover:text-tea-dark transition-colors">相生祭情報</a>
                 <a href="#mission" class="block text-gray-700 hover:text-tea-dark transition-colors">私たちの想い</a>
-                <a href="https://www.instagram.com/sagami_gsse5th/" class="block text-gray-700 hover:text-tea-dark transition-colors" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram" width="20" height="20">
+                <a href="https://www.instagram.com/sagami_gsse5th/" class="block text-gray-700 hover:text-tea-dark transition-colors" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/instagram-icon.webp" alt="Instagram" width="20" height="20">
                 </a>
             </div>
         </div>
@@ -158,7 +222,13 @@
                         </div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">伝統の味わい</h4>
                         <div style="text-align: center; margin: 2em;">
-                            <img src="images/sanokawa.jpg" width="100%" style="display: block; margin: auto;">
+                            <img 
+                                src="images/sanokawa.webp" 
+                                srcset="images/sanokawa.webp 1x, images/sanokawa@2x.webp 2x"
+                                alt="藤野 佐野川茶の茶畑と茶くてるの素材となる茶葉" 
+                                loading="lazy" 
+                                width="100%" 
+                                style="display: block; margin: auto;">
                         </div>
                     </div>
                 </div>
@@ -208,9 +278,15 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">「茶くてる」とは</h2>
-
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">佐野川茶のノンアルコールのティーカクテル</h3>
                 <div style="text-align: center; margin: 2em;">
-                    <img src="images/sakuteru.png" width="40%" style="display: block; margin: auto;">
+                    <img 
+                        src="images/sakuteru.webp" 
+                        srcset="images/sakuteru.webp 1x, images/sakuteru@2x.webp 2x"
+                        alt="茶くてる スタンダード" 
+                        loading="lazy" 
+                        width="40%" 
+                        style="display: block; margin: auto;">
                 </div>
 
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -324,7 +400,13 @@
             </div>
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
                 <div style="text-align: center; margin: 2em;">
-                    <img src="images/team.png" width="60%" style="display: block; margin: auto;">
+                    <img
+                        src="images/team.webp"
+                        srcset="images/team.webp 1x, images/team@2x.webp 2x"
+                        alt="佐野川茶普及プロジェクトメンバー" 
+                        loading="lazy" 
+                        width="75%" 
+                        style="display: block; margin: auto;">
                 </div>
                 <h3 class="text-2xl font-bold mb-4">お待ちしています！</h3>
                 <p class="text-tea-light mb-6 leading-relaxed">
@@ -355,11 +437,11 @@
                 <!-- 画像 -->
                 <div class="rounded-2xl overflow-hidden shadow-lg bg-gray-50">
                     <img
-                    src="images/takoyaki.png"
-                    alt="相生祭で販売するアツアツのたこ焼き"
-                    loading="lazy"
-                    class="w-full h-full object-cover aspect-[4/3]"
-                    >
+                        src="images/takoyaki.webp"
+                        srcset="images/takoyaki.webp 1x, images/takoyaki@2x.webp 2x"
+                        alt="相生祭で販売するアツアツのたこ焼き"
+                        loading="lazy"
+                        class="w-full h-full object-cover aspect-[4/3]">
                 </div>
 
                 <!-- 説明 -->
@@ -369,9 +451,8 @@
                     </h3>
                     <p class="text-gray-700 leading-relaxed mb-4">
                         だし香る生地に大きめのタコ。仕上げのソースは「ソースマヨ」「クレイジーソルト」「ゆずポン酢ゆかり」の3種類から選べます。<br><br>
-                        濃厚なたこ焼きの後味を、<span class="font-semibold text-tea-dark">茶くてる</span>がすっと流してくれます。
+                        コクのあるソースと生地の旨味を、<span class="font-semibold text-tea-dark">茶くてる</span>の清々しい香りと心地よい渋みが脂をすっと洗い流し、後味を軽やかに整えます。
                     </p>
-
                     <!-- ペアリングの提案 -->
                     <div class="bg-tea-light/40 border border-tea-light rounded-xl p-4">
                     <p class="text-gray-800">
@@ -383,6 +464,42 @@
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold mb-6">よくある質問</h2>
+            <details class="mb-4">
+                <summary class="font-semibold">「茶くてる」と「茶くてる with モヒート」の違いはなんですか？</summary>
+                <p class="mt-2 text-gray-700">「茶くてる」は佐野川茶の香りと旨味をそのまま味わえるスタンダードタイプです。一方、「茶くてる with モヒート」はミントとライムの香りを加えた爽やかなアレンジで、リフレッシュしたいときにぴったりの一杯です。</p>
+            </details>
+            <details class="mb-4">
+                <summary class="font-semibold">「茶くてる」はどこで飲めますか？</summary>
+                <p class="mt-2 text-gray-700">2025年11月2日、3日の第56回 相模女子大学 相生祭で試飲いただけます。</p>
+            </details>
+            <details class="mb-4">
+                <summary class="font-semibold">「茶くてる」にアルコールは入っていますか？</summary>
+                <p class="mt-2 text-gray-700">ノンアルコールのティーカクテルです。</p>
+            </details>
+            <details class="mb-4">
+                <summary class="font-semibold">佐野川茶はどこで購入できますか？</summary>
+                <p class="mt-2 text-gray-700">神奈川県相模原市緑区・佐野川地区の直売所や地域アンテナショップで購入可能です。相模女子大学の近隣であれば、さがみはらアンテナショップ sagamix（ボーノ相模大野2階）で販売されてます。</p>
+            </details>
+
+        </div>
+    </section>
+    <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+            {"@type":"Question","name":"「茶くてる」と「茶くてる with モヒート」の違いはなんですか？","acceptedAnswer":{"@type":"Answer","text":"「茶くてる」は佐野川茶の香りと旨味をそのまま味わえるスタンダードタイプです。一方、「茶くてる with モヒート」はミントとライムの香りを加えた爽やかなアレンジで、リフレッシュしたいときにぴったりの一杯です。"}},
+            {"@type":"Question","name":"「茶くてる」はどこで飲めますか？","acceptedAnswer":{"@type":"Answer","text":"2025年11月2日、3日の第56回 相模女子大学 相生祭で試飲いただけます。"}},
+            {"@type":"Question","name":"「茶くてるにアルコールは入っていますか？","acceptedAnswer":{"@type":"Answer","text":"ノンアルコールのティーカクテルです。"}}
+            {"@type":"Question","name":"佐野川茶はどこで購入できますか？","acceptedAnswer":{"@type":"Answer","text":"神奈川県相模原市緑区・佐野川地区の直売所や地域アンテナショップで購入可能です。相模女子大学の近隣であれば、さがみはらアンテナショップ sagamix（ボーノ相模大野2階）で販売されてます。"}}
+        ]
+        }
+    </script>
 
     <!-- Mission Section -->
     <section id="mission" class="py-20 bg-white">
@@ -533,6 +650,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

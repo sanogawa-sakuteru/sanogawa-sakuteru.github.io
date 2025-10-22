@@ -417,7 +417,7 @@ html {
 
 #top {
     /* 背景画像の指定 */
-    background-image: url('/images/148930.jpg'); 
+    background-image: url('/images/148930.webp'); 
     
     /* 背景画像の繰り返しを非表示にする */
     background-repeat: no-repeat; 
