@@ -23,19 +23,19 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
+    "build:minify": "npm run minify:css && npm run minify:js && npm run minify:html && gatsby build && npm run move-index",
+    "move-index": "rm public/index.html && mv public/index.min.html public/index.html",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean && rm -rf docs",
-    "clean:win": "gatsby clean && npm run remove-docs-win",
-    "remove-docs-win": "powershell -Command \"Remove-Item -Recurse -Force docs -ErrorAction SilentlyContinue\"",
+    "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build && cp -pvr public/* ../ && git add ../ && git commit -m 'Deploy to production' && git push",
-    "build:docs": "gatsby build && npm run move-public",
-    "move-public": "rm -rf docs && mv public docs",
-    "build:docs-win": "gatsby build && npm run move-public-win",
-    "move-public-win": "powershell -Command \"Remove-Item -Recurse -Force docs -ErrorAction SilentlyContinue; Move-Item public docs\""
+    "minify:css": "cleancss -o static/css/style.min.css static/css/style.css",
+    "minify:js": "terser static/js/main.js -c -m -o static/js/main.min.js",
+    "minify:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes--remove-tag-whitespace --use-short-doctype static/index.html -o static/index.min.html",
+    "minify:all": "npm run minify:css && npm run minify:js && npm run minify:html"
   },
   "repository": {
     "type": "git",

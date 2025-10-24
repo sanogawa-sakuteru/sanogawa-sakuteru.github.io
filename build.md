@@ -9,16 +9,10 @@ How to Build
 $ npm install
 ```
 
-ビルド (public -> docsに出力)
+ビルド (publicに出力)
 ```
 $ npm run clean
-$ npm run build:docs
-$ npm run serve
-```
-windows version (Power Shell version)
-```
-$ npm run clean:win
-$ npm run build:docs-win
+$ npm run build:minify
 $ npm run serve
 ```
 
@@ -46,6 +40,8 @@ $ npm run serve
 * gatsby develop は開発用サーバーで、実際の静的出力(public)には出力されない 
 * gatsby build → public/ ディレクトリに生成されます。
 * gatsby serve を使えばローカルで本番ビルドを確認できる
+
+### 🧩 **1. gatsby develop**
 
 ---
 

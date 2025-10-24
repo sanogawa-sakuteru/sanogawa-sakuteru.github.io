@@ -6,7 +6,7 @@
   <title>茶くてる - 佐野川茶の新しい魅力を発見 | 第56回 相模女子大学 相生祭</title>
 
   <meta name="description" content="相模原市藤野の特産『佐野川茶』を使ったノンアル・ティーカクテル「茶くてる」。香り・旨味・色合いを活かした新しいお茶体験。2025年の相生祭で試飲できます。">
-  <meta name="keywords" content="佐野川茶, 茶くてる, 藤野, 相模原, ノンアルコール, 相模女子大, 冷茶, 地産地消, 相生祭, ミント, モヒート, 宮本茶園, JA神奈川つくい">
+  <meta name="keywords" content="佐野川茶, 茶くてる, 藤野, 相模原, ノンアルコール, 相模女子大, 日本茶, お茶, 相生祭, モヒート">
   <link rel="canonical" href="https://sakuteru.com/">
   <meta name="robots" content="index, follow, max-image-preview:large">
 
@@ -170,6 +170,45 @@
         </div>
     </nav>
 
+    <!-- 常時表示フロート：Instagramフォロー割引（背景なしアイコン＋3行＋閉じるボタン） -->
+    <div id="promoBanner"
+        class="fixed top-20 right-5 z-[60] max-w-[92vw] sm:max-w-sm transition-opacity duration-300">
+    <div class="relative bg-tea-light/90 text-gray-900 px-4 py-3 rounded-xl shadow-lg border border-tea-dark/20 backdrop-blur-sm leading-snug">
+        
+        <!-- 閉じるボタン -->
+        <button id="closeBannerBtn"
+                aria-label="閉じる"
+                class="absolute -top-2 -right-2 bg-black/20 hover:bg-black/30 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+        ×
+        </button>
+
+        <!-- Instagramリンク -->
+        <a href="https://www.instagram.com/sagami_gsse5th/"
+        target="_blank" rel="noopener noreferrer"
+        class="block hover:text-tea-dark transition-colors text-center">
+        <div class="flex justify-center items-center gap-3 mb-1">
+            <!-- Instagramアイコン（背景なし） -->
+            <img src="images/icon-instagram/icon-instagram-circle-color.png"
+                alt="Instagramアイコン"
+                width="28" height="28"
+                loading="lazy"
+                class="rounded-none">
+            <p class="font-semibold text-tea-dark text-base">Instagramフォローで</p>
+        </div>
+        <p class="font-bold text-lg text-tea-dark">「茶くてる」一杯 200円引き</p>
+        <p class="underline text-gray-700 text-sm">@sagami_gsse5th をフォロー</p>
+        </a>
+    </div>
+    </div>
+
+    <script>
+    document.getElementById("closeBannerBtn").addEventListener("click", function() {
+        const banner = document.getElementById("promoBanner");
+        banner.classList.add("opacity-0");
+        setTimeout(() => banner.remove(), 300);
+    });
+    </script>
+
     <!-- Hero Section -->
     <section id="top" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-tea-light to-warm-beige overflow-hidden">
         <!-- 黒透明オーバーレイ -->
@@ -261,7 +300,7 @@
                     <div>
                         <h3 class="text-2xl font-bold text-gray-800 mb-4">存続の危機に直面する佐野川茶</h3>
                         <p class="text-gray-700 mb-4 leading-relaxed">
-                            現在、佐野川茶を栽培する農家は3軒。しかし、高齢化により<strong class="text-red-600">2026年3月で2軒が引退</strong>を決められました。
+                            現在、足柄茶を生産する藤野茶業部農家は3軒、佐野川茶を栽培する農家は2軒です。しかし、高齢化により<strong class="text-red-600">2026年3月で藤野茶業部の解散</strong>が決められました。
                             来年4月以降は、宮本氏一人で伝統を守り続けることになります。
                         </p>
                         <p class="text-gray-700 leading-relaxed">
@@ -647,7 +686,19 @@
                 <p class="mt-2 text-sm">佐野川茶の持続可能な未来のために</p>
             </div>
         </div>
+        <div class="ml-2 mt-6 text-gray-400 text-xs text-left">
+            最終更新日：<span id="lastModified"></span>
+        </div>
     </footer>
+    <script>
+        const el = document.getElementById("lastModified");
+        el.textContent = new Date(document.lastModified)
+            .toLocaleString("ja-JP", { year: "numeric", month: "2-digit", day: "2-digit" });
+    </script>
+
+    <div style="font-size: 8px; margin: 1em; text-color: #eee;">
+        <a href="https://www.illustrstock.com/">アイコン出典：イラストストック</a>
+    </div>
 
     <!-- JavaScript -->
     <script src="js/main.min.js" defer></script>
