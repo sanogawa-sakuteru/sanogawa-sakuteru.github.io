@@ -170,35 +170,35 @@
         </div>
     </nav>
 
-    <!-- 常時表示フロート：Instagramフォロー割引（背景なしアイコン＋3行＋閉じるボタン） -->
+    <!-- 常時表示フロート：Instagramフォロー割引（左下配置＋背景なしアイコン＋閉じるボタン） -->
     <div id="promoBanner"
-        class="fixed top-20 right-5 z-[60] max-w-[92vw] sm:max-w-sm transition-opacity duration-300">
-    <div class="relative bg-tea-light/90 text-gray-900 px-4 py-3 rounded-xl shadow-lg border border-tea-dark/20 backdrop-blur-sm leading-snug">
-        
-        <!-- 閉じるボタン -->
-        <button id="closeBannerBtn"
-                aria-label="閉じる"
-                class="absolute -top-2 -right-2 bg-black/20 hover:bg-black/30 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
-        ×
-        </button>
+        class="fixed bottom-6 left-5 z-[60] max-w-[92vw] sm:max-w-sm transition-opacity duration-300">
+        <div class="relative bg-tea-light/90 text-gray-900 px-4 py-3 rounded-xl shadow-lg border border-tea-dark/20 backdrop-blur-sm leading-snug">
+            
+            <!-- 閉じるボタン -->
+            <button id="closeBannerBtn"
+                    aria-label="閉じる"
+                    class="absolute -top-2 -right-2 bg-black/20 hover:bg-black/30 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">
+            ×
+            </button>
 
-        <!-- Instagramリンク -->
-        <a href="https://www.instagram.com/sagami_gsse5th/"
-        target="_blank" rel="noopener noreferrer"
-        class="block hover:text-tea-dark transition-colors text-center">
-        <div class="flex justify-center items-center gap-3 mb-1">
-            <!-- Instagramアイコン（背景なし） -->
-            <img src="images/icon-instagram/icon-instagram-circle-color.png"
-                alt="Instagramアイコン"
-                width="28" height="28"
-                loading="lazy"
-                class="rounded-none">
-            <p class="font-semibold text-tea-dark text-base">Instagramフォローで</p>
+            <!-- Instagramリンク -->
+            <a href="https://www.instagram.com/sagami_gsse5th/"
+            target="_blank" rel="noopener noreferrer"
+            class="block hover:text-tea-dark transition-colors text-center">
+            <div class="flex justify-center items-center gap-3 mb-1">
+                <!-- Instagramアイコン（背景なし） -->
+                <img src="images/instagram-icon.webp"
+                    alt="Instagramアイコン"
+                    width="28" height="28"
+                    loading="lazy"
+                    class="rounded-none">
+                <p class="font-semibold text-tea-dark text-base">Instagramフォローで</p>
+            </div>
+            <p class="font-bold text-lg text-tea-dark">「茶くてる」一杯 200円引き</p>
+            <p class="underline text-gray-700 text-sm">@sagami_gsse5th をフォロー</p>
+            </a>
         </div>
-        <p class="font-bold text-lg text-tea-dark">「茶くてる」一杯 200円引き</p>
-        <p class="underline text-gray-700 text-sm">@sagami_gsse5th をフォロー</p>
-        </a>
-    </div>
     </div>
 
     <script>
@@ -695,11 +695,6 @@
         el.textContent = new Date(document.lastModified)
             .toLocaleString("ja-JP", { year: "numeric", month: "2-digit", day: "2-digit" });
     </script>
-
-    <div style="font-size: 8px; margin: 1em; text-color: #eee;">
-        <a href="https://www.illustrstock.com/">アイコン出典：イラストストック</a>
-    </div>
-
     <!-- JavaScript -->
     <script src="js/main.min.js" defer></script>
 </body>
