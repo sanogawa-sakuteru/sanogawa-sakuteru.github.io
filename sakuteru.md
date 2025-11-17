@@ -258,3 +258,16 @@
 * [ライブドアニュース](https://news.livedoor.com/pr_article/detail/29741431/image/50189201/)
 * [ＮＧＯネットワークジャパン](https://www.ngo.ne.jp/modules/socialventurenews/index.php?page=clipping&clipping_id=73327)
 * [Digital PR Platform](https://digitalpr.jp/r/119783)
+
+
+### メディア
+
+#### タウンニュース
+* [佐野川茶、カクテルで若者に](https://www.townnews.co.jp/0302/2025/10/23/807412.html)
+* [佐野川茶のカクテルいかが？](https://www.townnews.co.jp/0302/2025/10/30/808578.html)
+
+#### 読売新聞（神奈川版） 
+* [佐野川茶　相模原特産茶でノンアル飲料](https://www.yomiuri.co.jp/keyword/410088/)
+
+### 商標出願
+* [茶くてる - 登録6983131(商願2025-047001)]https://www.j-platpat.inpit.go.jp/c1801/TR/JP-2025-047001/40/ja)
